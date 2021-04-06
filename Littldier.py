@@ -1,13 +1,63 @@
 #menu bar tool
 import os
-import socket
-import requests
 import sys
 import time
-import subprocess
 from colorama import init , Fore
 #is started menu for tools
 init()
+
+#--==--==--==--==--Ithem nided--==--==--==--==--
+try:
+
+    try :
+
+        import subprocess
+
+    except:
+
+        print('You need the prerequisites of the program. Wait a few moments to install ...\n')
+        os.system('pip install subprocess')
+        
+    try :
+
+        from colorama import init , Fore
+
+    except :
+
+        print('You need the prerequisites of the program. Wait a few moments to install ...\n')
+        subprocess.check_output('pip install colorama')
+
+    try :
+
+        import requests
+
+    except:
+
+        print('You need the prerequisites of the program. Wait a few moments to install ...\n')
+        subprocess.check_output('pip install requests')
+
+    try :
+
+        import builtwith
+
+    except:
+
+        print('You need the prerequisites of the program. Wait a few moments to install ...\n')
+        subprocess.check_output('pip install builtwith')
+    
+    try :
+
+        import socket
+
+    except:
+
+        print('You need the prerequisites of the program. Wait a few moments to install ...\n')
+        subprocess.check_output('pip install socket')
+
+except:
+
+    print('[!] Check the network connection [!]')    
+
 #--==--==--==--==--Variable--==--==--==--==-----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 R  = Fore.RED
@@ -23,6 +73,7 @@ C  = Fore.CYAN
 LC = Fore.LIGHTCYAN_EX
 baner = (Fore.LIGHTYELLOW_EX + '\n\t██╗     ██╗████████╗████████╗██╗     ██████╗ ██╗███████╗██████╗\n'+'\t██║     ██║╚══██╔══╝╚══██╔══╝██║     ██╔══██╗██║██╔════╝██╔══██╗ ' + G + '   [!] '+ W +'Manufacturer : Arash GMH' + G + ' [!]\n' + LY +  '\t██║     ██║   ██║      ██║   ██║     ██║  ██║██║█████╗  ██████╔╝ ' + G + '   [!] ' + W +'Application type : Information'+ G + ' [!] \n' + LY +'\t██║     ██║   ██║      ██║   ██║     ██║  ██║██║██╔══╝  ██╔══██╗' + G + '    [!] ' + W + 'Language of construction : Python' + G +' [!]'+ LY + '\n' + '\t███████╗██║   ██║      ██║   ███████╗██████╔╝██║███████╗██║  ██║'+ G + '    [!] '+ W +'Version 1.8.2'+ G +' [!]\n'+LY+'\t╚══════╝╚═╝   ╚═╝      ╚═╝   ╚══════╝╚═════╝ ╚═╝╚══════╝╚═╝  ╚═╝\n')
 ENTERIN =(str( C + "┌─c " + R + "!" + LG + "Littldier" + R + "!" + W + "/" + LR + "Aim.election" + W + "/" + G + "@A" + LC + "]" + LC + "\n└──C\t:\t"))
+
 
 #____________________________________menu____________________________________
 def _start_():
